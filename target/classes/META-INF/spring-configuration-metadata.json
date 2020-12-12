@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "jdbc",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.hr.config.JdbcConfig",
+      "sourceMethod": "dataSource()"
+    },
+    {
+      "name": "jdbc",
+      "type": "com.hr.config.JdbcProperties",
+      "sourceType": "com.hr.config.JdbcProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jdbc.driver",
+      "type": "java.lang.String",
+      "sourceType": "com.hr.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.password",
+      "type": "java.lang.String",
+      "sourceType": "com.hr.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.url",
+      "type": "java.lang.String",
+      "sourceType": "com.hr.config.JdbcProperties"
+    },
+    {
+      "name": "jdbc.username",
+      "type": "java.lang.String",
+      "sourceType": "com.hr.config.JdbcProperties"
+    }
+  ],
+  "hints": []
+}
