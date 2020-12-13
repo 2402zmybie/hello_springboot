@@ -2,12 +2,6 @@
   "groups": [
     {
       "name": "jdbc",
-      "type": "javax.sql.DataSource",
-      "sourceType": "com.hr.config.JdbcConfig",
-      "sourceMethod": "dataSource()"
-    },
-    {
-      "name": "jdbc",
       "type": "com.hr.config.JdbcProperties",
       "sourceType": "com.hr.config.JdbcProperties"
     }

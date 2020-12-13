@@ -8,3 +8,26 @@ jdbc:
 spring:
   profiles:
     active: baidu,def
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/test
+    username: root
+    password: 123456
+
+
+server:
+  port: 81
+
+#设置日志记录级别, springboot已经整合了各种日志组件
+logging:
+  level:
+    com.hr: debug
+    org.springframework: info
+
+#配置mybatis
+mybatis:
+#  实体类别名包路径
+  type-aliases-package: com.hr.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mapper-locations: classpath:mappers/*.xml
