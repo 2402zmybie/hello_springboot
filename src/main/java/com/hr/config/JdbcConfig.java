@@ -54,11 +54,11 @@ public class JdbcConfig {
 //使用hikari数据库连接池,只需要在配置文件中配置即可, 所以不需要自己指定连接池了
 //第三种注入方法
 //@Configuration
-//public class JdbcConfig {
+public class JdbcConfig {
 //
 //    @Bean
 //    @ConfigurationProperties(prefix = "jdbc")
 //    public DataSource dataSource() {
 //        return  new DruidDataSource();
 //    }
-//}
+}
