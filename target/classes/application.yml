@@ -1,16 +1,16 @@
-jdbc:
-  driverClassName: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost/test1
-  username: root
-  password: 123456
+#jdbc:
+#  driverClassName: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost/test1
+#  username: root
+#  password: 123456
 
 #激活配置文件  需要指定其他的配置文件名称
 spring:
   profiles:
     active: baidu,def
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/test?serverTimezone=UTC
     username: root
     password: 123456
 
@@ -24,3 +24,10 @@ logging:
     com.hr: debug
     org.springframework: info
 
+#配置mybatis
+mybatis:
+#  实体类别名包路径
+  type-aliases-package: com.hr.pojo
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mapper-locations: classpath:mappers/*.xml
